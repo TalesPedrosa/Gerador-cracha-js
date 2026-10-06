@@ -20,21 +20,27 @@
 
 	let nome = prompt("Digite seu nome: ");
     let sobrenome = prompt("Digite seu sobrenome: ");
-    let anoNascimento = prompt("Digite seu Ano de nascimento: ");
-	
+    let anoNascimento = Number(prompt("Digite seu Ano de nascimento: "));
+
 	// 2º passo -> confirmar atividade 
 
     confirm("É aluno ativo da instituição?");
 
 	// 3º passo -> printar tudo (nn sei se precisa mas senti falta) 
-
-	// console.log("Seu nome é: " + nome)
-	// console.log("Seu sobrenome é: " + sobrenome)
-	// console.log("Seu ano de nascimento é: " + anoNascimento)
-
+    let idade = 2026 - anoNascimento 
+    console.log("Crachá virtual: " + nome + " " + sobrenome.toUpperCase());
+    console.log("Idade estimada: " + idade + " anos.");
+    console.log("O seu primeiro nome tem " + nome.length + " letras.");
+    if (confirm = true){
+    console.log("Estatuto de aluo ativo: true")
+    }
+    else{
+    console.log("Estatuto de aluo ativo: false")
+    }
   </script>
 
 </body>
 
 </html>
+
 
