@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Projeto Parte II Lógica + Versionamento</title>
+
+</head>
+
+<body>
+
+  <h1>HTML Responsabilidade da dupla A</h1>
+
+  <script>
+
+    // 1º passo -> dados dos equipamentos
+
+    let nomes = ["Computador", "Teclado", "Mouse"];
+
+    let estoque = [
+      [5, 3],
+      [2, 5],
+      [10, 4]
+    ];
+
+
+    // 2º passo -> relatório do estoque
+
+    console.log("RELATÓRIO DO ESTOQUE");
+
+    for (let i = 0; i < estoque.length; i++) {
+
+      console.log("ID do equipamento: " + i);
+      console.log("Nome: " + nomes[i]);
+      console.log("Quantidade Atual: " + estoque[i][0]);
+      console.log("Quantidade Mínima: " + estoque[i][1]);
+
+      if (estoque[i][0] < estoque[i][1]) {
+
+        console.log("⚠️ Estoque crítico! Necessário abrir chamado de compra.");
+
+      }
+
+    }
+
+
+    // 3º passo -> registro de recebimento
+
+    let id = prompt("Digite o ID do equipamento que está chegando (0 a 2): ");
+    let quantidade = prompt("Digite a quantidade que está chegando: ");
+
+    id = Number(id);
+    quantidade = Number(quantidade);
+
+
+    // 4º passo -> verificar se o ID é válido
+
+    if (id < 0 || id > 2) {
+
+      console.log("Erro! ID do equipamento inválido.");
+
+    } else {
+
+      estoque[id][0] = estoque[id][0] + quantidade;
+
+      console.log("Recebimento registrado com sucesso.");
+      console.log("ID do equipamento: " + id);
+      console.log("Nome: " + nomes[id]);
+      console.log("Quantidade Atual: " + estoque[id][0]);
+      console.log("Quantidade Mínima: " + estoque[id][1]);
+
+    }
+
+  </script>
+
+</body>
+
+</html>
