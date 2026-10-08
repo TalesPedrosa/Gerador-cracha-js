@@ -12,6 +12,7 @@ Separamos em duas duplas, a dupla A ficou responsável pelo desenvolvimento da p
 O código "index.html" da dupla A:
 - utiliza "prompt()" para solicitar, em variáveis separadas, três dados ao utilizador: o nome, o sobrenome e o ano de nascimento
 - utiliza "confirm()" para perguntar ao utilizador: "É aluno ativo da instituição?" e guardar o resultado numa variável
+
 A dupla B ficou responsável pela adição da segunda parte do código feito pela dupla A , criando uma branch de nome "feature-geracao-cracha" que adiciona:
 - Adicionamos a função number() para converter o ano de nascimento para um tipo numérico
 - Subtraimos a idade pelo ano atual e colocamos essa informação na variável idade
